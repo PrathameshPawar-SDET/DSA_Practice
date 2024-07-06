@@ -6,7 +6,7 @@ public class LeftRotationArray {
         int temp = arr.get(0);
         int n = arr.size();
         for(int j=0;j<=n-2;j++){
-            arr.set(j, j+1);
+            arr.set(j, arr.get(j+1));
         }
         arr.set(n-1, temp);
         return arr;
